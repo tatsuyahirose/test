@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>◆◆◆テスト用◆◆◆Oops 定期配送スキップ・休止・解約フォーム</title>
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+  <header class="header">
+    <img src="./images/logo.svg" alt="">
+  </header>
+  <main class="container">
+    <div id="form1">
+      <div class="formInner">
+        <p class="form1_title">定期配送プラン<br/>スキップ・休止・解約フォーム</p>
+        <p class="form1_description">
+          Oopsをご利用いただきありがとうございます。<br/>
+          <br/>
+          定期配送のスキップ・休止・解約をご希望の方は、こちらのフォームに必要事項を入力していただいたのち、手続きを進めてまいります。<br/>
+          <br/>
+          次回お届け予定日の7日前までに申請をお願いいたします。<br/>
+          <br/>
+          <span class="form1_description_note">※7日前を過ぎますと、既に発送処理をおこなっておりますので次回発送分より変更が適用されます。</span><br/>
+          <br/>
+          購入時に登録したお名前、メールアドレス、電話番号を正しくご入力ください。<br/>
+          <br/>
+          間違いがあった場合は解約・休止の手続きができませんのでご注意ください。
+        </p>
+      </div>
+      <div class="formInner">
+        <!-- 名前 -->
+        <div class="formItem">
+          <p class="inputTitle">名前<span class="isInputRequire">必須</span></p>
+          <label class="formItem_Label">
+            <input class="textInput" type="text" name="form1-fullName" placeholder="例）ウープス太郎">
+          </label>
+          <p class="errorMessage js-fullName-error">※この質問は必須です</p>
+        </div>
+
+        <!-- メールアドレス -->
+        <div class="formItem">
+          <p class="inputTitle">メールアドレス<span class="isInputRequire">必須</span></p>
+          <label class="formItem_Label">
+            <input class="textInput" type="text" name="form1-mailAddress" placeholder="xxx@example.com">
+          </label>
+          <p class="errorMessage js-mailAddress-error">※この質問は必須です</p>
+        </div>
+
+        <!-- 電話番号 -->
+        <div class="formItem">
+          <p class="inputTitle">電話番号<span class="isInputRequire">必須</span></p>
+          <label class="formItem_Label">
+            <input class="textInput" type="tel" name="form1-phoneNumber" placeholder="例）09012345678">
+          </label>
+          <p class="errorMessage js-phoneNumber-error">※この質問は必須です</p>
+        </div>
+
+        <!-- 申請内容 -->
+        <div class="formItem">
+          <p class="inputTitle">定期配送の次回配送分をスキップ・休止・解約のどれをご希望ですか？<span class="isInputRequire">必須</span></p>
+          <div class="radioWrapper">
+            <label class="formItem_label">
+              <input type="radio" name="form1-radio" class="formItem_label_input" checked>
+              <span class="formItem_label_text">次回配送分をスキップ</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form1-radio" class="formItem_label_input">
+              <span class="formItem_label_text">休止（一時停止）</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form1-radio" class="formItem_label_input">
+              <span class="formItem_label_text">解約</span>
+            </label>
+          </div>
+        </div>
+
+        <button type="button" class="nextButton js-form1NextButton">次へ</button>
+
+        <div class="progress">
+          <div class="progress__bar">
+            <div class="progress__bar__inner" style="width: 10%;"></div>
+          </div>
+          <div class="progress__bar__num">10%</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="form2">
+      <div class="formInner">
+        <p class="form2_description">
+          定期配送プランは、次回配送分のお薬の配送をスキップすることができます。<br/>
+          <br/>
+          お薬が余ってしまっている場合は、解約手続き不要でスキップ可能ですので、ぜひご利用ください。
+        </p>
+      </div>
+      <img class="js-lazyLoading imgContents" src="" data-lazy="./images/form2.png" alt="" width="375" height="1705" loading="lazy">
+      <div class="formInner">
+        <!-- スキップする薬の選択 -->
+        <div class="formItem">
+          <p class="inputTitle">次回配送分のスキップを希望するお薬を選択してください。<span class="isInputRequire">必須</span></p>
+          <div class="radioWrapper">
+            <label class="formItem_label">
+              <input type="radio" name="form2-radio" class="formItem_label_input" checked>
+              <span class="formItem_label_text">シアリスジェネリック（5錠）</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form2-radio" class="formItem_label_input">
+              <span class="formItem_label_text">バイアグラジェネリック（5錠）</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form2-radio" class="formItem_label_input">
+              <span class="formItem_label_text">フィナステリド（1ヶ月分28錠）</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form2-radio" class="formItem_label_input">
+              <span class="formItem_label_text">デュタステリド（1ヶ月分30錠）</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form2-radio" class="formItem_label_input">
+              <span class="formItem_label_text">フィナステリド+ミノキシジル外用薬セット</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form2-radio" class="formItem_label_input">
+              <span class="formItem_label_text">デュタステリド+ミノキシジル外用薬セット</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form2-radio" class="formItem_label_input">
+              <span class="formItem_label_text">ミノキシジル外用薬のみ</span>
+            </label>
+          </div>
+        </div>
+
+        <button type="button" class="nextButton js-form2NextButton">次へ</button>
+        <button type="button" class="prevButton js-form2PrevButton">前に戻る</button>
+
+        <div class="progress">
+          <div class="progress__bar">
+            <div class="progress__bar__inner" style="width: 80%;"></div>
+          </div>
+          <div class="progress__bar__num">80%</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="form3">
+      <div class="formInner">
+        <p class="form3_title">休止・解約を希望するお薬</p>
+      </div>
+      <div class="formInner">
+        <!-- スキップする薬の選択 -->
+        <div class="formItem">
+          <p class="inputTitle">次回配送分の解約・休止を希望するお薬を選択してください。<span class="isInputRequire">必須</span></p>
+          <div class="radioWrapper">
+            <label class="formItem_label">
+              <input type="radio" name="form3-radio" class="formItem_label_input" checked>
+              <span class="formItem_label_text">シアリスジェネリック（5錠）</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form3-radio" class="formItem_label_input">
+              <span class="formItem_label_text">バイアグラジェネリック（5錠）</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form3-radio" class="formItem_label_input">
+              <span class="formItem_label_text">フィナステリド（1ヶ月分28錠）</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form3-radio" class="formItem_label_input">
+              <span class="formItem_label_text">デュタステリド（1ヶ月分30錠）</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form3-radio" class="formItem_label_input">
+              <span class="formItem_label_text">フィナステリド+ミノキシジル外用薬セット</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form3-radio" class="formItem_label_input">
+              <span class="formItem_label_text">デュタステリド+ミノキシジル外用薬セット</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form3-radio" class="formItem_label_input">
+              <span class="formItem_label_text">ミノキシジル外用薬のみ</span>
+            </label>
+          </div>
+        </div>
+
+        <button type="button" class="nextButton js-form3NextButton">次へ</button>
+        <button type="button" class="prevButton js-form3PrevButton">前に戻る</button>
+
+        <div class="progress">
+          <div class="progress__bar">
+            <div class="progress__bar__inner" style="width: 25%;"></div>
+          </div>
+          <div class="progress__bar__num">25%</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="form4">
+      <div class="formInner">
+        <p class="form4_title">シアリス・バイアグラジェネリック<br>定期配送プランの解約・休止</p>
+      </div>
+      <div class="formInner">
+        <div class="formItem">
+          <p class="inputTitle">解約・休止理由を教えてください。<span class="isInputRequire">必須</span></p>
+          <div class="radioWrapper">
+            <label class="formItem_label">
+              <input type="radio" name="form4-radio" class="formItem_label_input" checked>
+              <span class="formItem_label_text">他のクリニックで治療を行う予定</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form4-radio" class="formItem_label_input">
+              <span class="formItem_label_text">薬の値段が高い</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form4-radio" class="formItem_label_input">
+              <span class="formItem_label_text">ED治療をやめる</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form4-radio" class="formItem_label_input">
+              <span class="formItem_label_text">効果が感じられなかった</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form4-radio" class="formItem_label_input">
+              <span class="formItem_label_text">お薬が身体にあわなかった</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form4-radio" class="formItem_label_input">
+              <span class="formItem_label_text">医師の対応に不満があった</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form4-radio" class="formItem_label_input">
+              <span class="formItem_label_text">間違えて定期配送プランを購入した</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form4-radio" class="formItem_label_input">
+              <span class="formItem_label_text">薬が余っている</span>
+            </label>
+          </div>
+        </div>
+
+        <button type="button" class="nextButton js-form4NextButton">次へ</button>
+        <button type="button" class="prevButton js-form4PrevButton">前に戻る</button>
+
+        <div class="progress">
+          <div class="progress__bar">
+            <div class="progress__bar__inner" style="width: 50%;"></div>
+          </div>
+          <div class="progress__bar__num">50%</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="form5">
+      <div class="formInner">
+        <p class="form5_title">AGA治療薬 定期配送プランの<br>解約・休止</p>
+      </div>
+      <div class="formInner">
+        <div class="formItem">
+          <p class="inputTitle">解約・休止理由を教えてください。<span class="isInputRequire">必須</span></p>
+          <div class="radioWrapper">
+            <label class="formItem_label">
+              <input type="radio" name="form5-radio" class="formItem_label_input" checked>
+              <span class="formItem_label_text">薬の値段が高い</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form5-radio" class="formItem_label_input">
+              <span class="formItem_label_text">AGA治療をやめる</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form5-radio" class="formItem_label_input">
+              <span class="formItem_label_text">効果が感じられなかった</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form5-radio" class="formItem_label_input">
+              <span class="formItem_label_text">医師の対応に不満があった</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form5-radio" class="formItem_label_input">
+              <span class="formItem_label_text">間違えて定期配送プランを購入してしまった</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form5-radio" class="formItem_label_input">
+              <span class="formItem_label_text">薬が余っている</span>
+            </label>
+          </div>
+        </div>
+
+        <button type="button" class="nextButton js-form5NextButton">次へ</button>
+        <button type="button" class="prevButton js-form5PrevButton">前に戻る</button>
+
+        <div class="progress">
+          <div class="progress__bar">
+            <div class="progress__bar__inner" style="width: 50%;"></div>
+          </div>
+          <div class="progress__bar__num">50%</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="form6">
+      <div class="formInner">
+        <p class="form6_title">ミノキシジル外用薬の解約・休止</p>
+        <p class="form6_description">
+          ミノキシジル外用薬のみ解約または休止をして、途中から再開することが可能です。<br/>
+          <br/>
+          また、次の配送タイミングの1回のみミノキシジルを追加することもできます。<br/>
+          <br/>
+          ミノキシジル外用薬の再開、1回のみ配送をご希望の場合は公式LINEアカウントからご連絡ください。
+        </p>
+      </div>
+      <div class="formInner">
+        <div class="formItem">
+          <p class="inputTitle">ミノキシジル外用薬だけ解約・休止しますか?<span class="isInputRequire">必須</span></p>
+          <div class="radioWrapper">
+            <label class="formItem_label">
+              <input type="radio" name="form6-radio" class="formItem_label_input" checked>
+              <span class="formItem_label_text">ミノキシジル外用薬だけ「解約」する</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form6-radio" class="formItem_label_input">
+              <span class="formItem_label_text">ミノキシジル外用薬だけ「休止」する</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form6-radio" class="formItem_label_input">
+              <span class="formItem_label_text">フィナステリド+ミノキシジル外用薬セットの解約に進む</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form6-radio" class="formItem_label_input">
+              <span class="formItem_label_text">デュタステリド+ミノキシジル外用薬セットの解約に進む</span>
+            </label>
+          </div>
+        </div>
+
+        <button type="button" class="nextButton js-form6NextButton">次へ</button>
+        <button type="button" class="prevButton js-form6PrevButton">前に戻る</button>
+
+        <div class="progress">
+          <div class="progress__bar">
+            <div class="progress__bar__inner" style="width: 40%;"></div>
+          </div>
+          <div class="progress__bar__num">40%</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="form7">
+      <div class="formInner">
+        <p class="form7_title">シアリス・バイアグラジェネリック<br>定期配送プランの解約・休止</p>
+      </div>
+      <img class="js-lazyLoading imgContents" src="" data-lazy="./images/form7.png" alt="" width="375" height="730" loading="lazy">
+      <div class="formInner">
+        <div class="formItem">
+          <p class="inputTitle">定期配送プランを解約・休止しますか?<span class="isInputRequire">必須</span></p>
+          <div class="radioWrapper">
+            <label class="formItem_label">
+              <input type="radio" name="form7-radio" class="formItem_label_input" checked>
+              <span class="formItem_label_text">はい、解約・休止します。</span>
+            </label>
+          </div>
+        </div>
+
+        <button type="button" class="nextButton js-form7NextButton">次へ</button>
+        <button type="button" class="prevButton js-form7PrevButton">前に戻る</button>
+
+        <div class="progress">
+          <div class="progress__bar">
+            <div class="progress__bar__inner" style="width: 75%;"></div>
+          </div>
+          <div class="progress__bar__num">75%</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="form8">
+      <div class="formInner">
+        <p class="form8_description">
+          定期配送プランは、次回配送分のお薬の配送をスキップすることができます。<br>
+          <br>
+          お薬が余ってしまっている場合は、解約手続き不要でスキップ可能ですので、ぜひご利用ください。
+        </p>
+      </div>
+      <img class="js-lazyLoading imgContents" src="" data-lazy="./images/form8.png" alt="" width="375" height="1705" loading="lazy">
+      <div class="formInner">
+        <div class="formItem">
+          <p class="inputTitle">定期配送プランを解約・休止しますか??<span class="isInputRequire">必須</span></p>
+          <div class="radioWrapper">
+            <label class="formItem_label">
+              <input type="radio" name="form8-radio" class="formItem_label_input" checked>
+              <span class="formItem_label_text">はい、解約・休止します。</span>
+            </label>
+          </div>
+        </div>
+
+        <button type="button" class="nextButton js-form8NextButton">次へ</button>
+        <button type="button" class="prevButton js-form8PrevButton">前に戻る</button>
+
+        <div class="progress">
+          <div class="progress__bar">
+            <div class="progress__bar__inner" style="width: 75%;"></div>
+          </div>
+          <div class="progress__bar__num">75%</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="form9">
+      <div class="formInner">
+        <div class="formItem">
+          <p class="inputTitle">他のクリニックで治療を行う予定はありますか？<span class="isInputRequire">必須</span></p>
+          <div class="radioWrapper">
+            <label class="formItem_label">
+              <input type="radio" name="form9-radio" class="formItem_label_input" checked>
+              <span class="formItem_label_text">他のクリニックで治療を行う予定がある</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form9-radio" class="formItem_label_input">
+              <span class="formItem_label_text">治療する予定はない</span>
+            </label>
+          </div>
+        </div>
+
+        <button type="button" class="nextButton js-form9NextButton">次へ</button>
+        <button type="button" class="prevButton js-form9PrevButton">前に戻る</button>
+
+        <div class="progress">
+          <div class="progress__bar">
+            <div class="progress__bar__inner" style="width: 60%;"></div>
+          </div>
+          <div class="progress__bar__num">60%</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="form10">
+      <div class="formInner">
+        <p class="form10_description">
+          お手数をおかけしてしまい申し訳ございません。<br>
+          <br>
+          定期配送プランと通常購入(単品購入)は、処方薬の購入手続きページで下記のようにそれぞれ選択ができます。
+        </p>
+      </div>
+      <img class="js-lazyLoading imgContents" src="" data-lazy="./images/form10.png" alt="" width="359" height="359" loading="lazy">
+      <div class="formInner">
+        <div class="formItem">
+          <p class="inputTitle">定期配送プランを解約・休止しますか??<span class="isInputRequire">必須</span></p>
+          <div class="radioWrapper">
+            <label class="formItem_label">
+              <input type="radio" name="form10-radio" class="formItem_label_input" checked>
+              <span class="formItem_label_text">はい、解約・休止します。</span>
+            </label>
+          </div>
+        </div>
+
+        <button type="button" class="nextButton js-form10NextButton">次へ</button>
+        <button type="button" class="prevButton js-form10PrevButton">前に戻る</button>
+
+        <div class="progress">
+          <div class="progress__bar">
+            <div class="progress__bar__inner" style="width: 75%;"></div>
+          </div>
+          <div class="progress__bar__num">75%</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="form11">
+      <div class="formInner">
+        <p class="form11_description">
+          定期配送プランは、次回配送分のお薬の配送をスキップすることができます。<br>
+          <br>
+          お薬が余ってしまっている場合は、解約手続き不要でスキップ可能ですので、ぜひご利用ください。
+        </p>
+      </div>
+      <img class="js-lazyLoading imgContents" src="" data-lazy="./images/form11.png" alt="" width="375" height="1705" loading="lazy">
+      <div class="formInner">
+        <div class="formItem">
+          <p class="inputTitle">解約・休止を進めますか？<span class="isInputRequire">必須</span></p>
+          <div class="radioWrapper">
+            <label class="formItem_label">
+              <input type="radio" name="form11-radio" class="formItem_label_input" checked>
+              <span class="formItem_label_text">はい、解約・休止手続きを進める</span>
+            </label>
+          </div>
+        </div>
+
+        <button type="button" class="nextButton js-form11NextButton">次へ</button>
+        <button type="button" class="prevButton js-form11PrevButton">前に戻る</button>
+
+        <div class="progress">
+          <div class="progress__bar">
+            <div class="progress__bar__inner" style="width: 75%;"></div>
+          </div>
+          <div class="progress__bar__num">75%</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="form12">
+      <div class="formInner">
+        <div class="formItem">
+          <p class="inputTitle">治療予定のクリニック名を教えてください。<span class="isInputAny">任意</span></p>
+          <label class="formItem_Label">
+            <input class="textInput" type="text" name="form12-clinicName" placeholder="例）◯◯クリニック">
+          </label>
+        </div>
+        <div class="formItem">
+          <p class="inputTitle">⑫そのクリニックでは海外製の医薬品を処方されている、または処方予定ですか？<span class="isInputRequire">必須</span></p>
+          <div class="radioWrapper">
+            <label class="formItem_label">
+              <input type="radio" name="form12-radio" class="formItem_label_input" checked>
+              <span class="formItem_label_text">はい、海外製の医薬品です</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form12-radio" class="formItem_label_input">
+              <span class="formItem_label_text">いいえ、国内正規品です</span>
+            </label>
+            <label class="formItem_label">
+              <input type="radio" name="form12-radio" class="formItem_label_input">
+              <span class="formItem_label_text">分かりません</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <img class="js-lazyLoading imgContents" src="" data-lazy="./images/form12.png" alt="" width="359" height="1524" loading="lazy">
+
+      <div class="formInner">
+        <button type="button" class="nextButton js-form12NextButton" style="margin-top: 0;">次へ</button>
+        <button type="button" class="prevButton js-form12PrevButton">前に戻る</button>
+
+        <div class="progress">
+          <div class="progress__bar">
+            <div class="progress__bar__inner" style="width: 75%;"></div>
+          </div>
+          <div class="progress__bar__num">75%</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="form13">
+      <img class="js-lazyLoading imgContents" src="" data-lazy="./images/form13.png" alt="" width="375" height="2704" loading="lazy">
+      <div class="formInner">
+        <div class="formItem">
+          <p class="inputTitle">定期配送プランを解約・休止しますか?<span class="isInputRequire">必須</span></p>
+          <div class="radioWrapper">
+            <label class="formItem_label">
+              <input type="radio" name="form13-radio" class="formItem_label_input" checked>
+              <span class="formItem_label_text">はい、解約・休止します。</span>
+            </label>
+          </div>
+        </div>
+
+        <button type="button" class="nextButton js-form13NextButton">次へ</button>
+        <button type="button" class="prevButton js-form13PrevButton">前に戻る</button>
+
+        <div class="progress">
+          <div class="progress__bar">
+            <div class="progress__bar__inner" style="width: 85%;"></div>
+          </div>
+          <div class="progress__bar__num">85%</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="form14">
+      <img class="js-lazyLoading imgContents" src="" data-lazy="./images/form14.png" alt="" width="375" height="1870" loading="lazy">
+      <div class="formInner">
+        <button type="button" class="nextButton js-form14NextButton">次へ</button>
+        <button type="button" class="prevButton js-form14PrevButton">前に戻る</button>
+
+        <div class="progress">
+          <div class="progress__bar">
+            <div class="progress__bar__inner" style="width: 80%;"></div>
+          </div>
+          <div class="progress__bar__num">80%</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="form15">
+      <img class="js-lazyLoading imgContents" src="" data-lazy="./images/form15.png" alt="" width="375" height="1692" loading="lazy">
+      <div class="formInner">
+        <div class="formItem">
+          <p class="inputTitle">解約・休止を進めますか？<span class="isInputRequire">必須</span></p>
+          <div class="radioWrapper">
+            <label class="formItem_label">
+              <input type="radio" name="form15-radio" class="formItem_label_input" checked>
+              <span class="formItem_label_text">はい、解約・休止手続きを進める</span>
+            </label>
+          </div>
+        </div>
+
+        <button type="button" class="nextButton js-form15NextButton">次へ</button>
+        <button type="button" class="prevButton js-form15PrevButton">前に戻る</button>
+
+        <div class="progress">
+          <div class="progress__bar">
+            <div class="progress__bar__inner" style="width: 90%;"></div>
+          </div>
+          <div class="progress__bar__num">90%</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="form16">
+      <div class="formInner">
+        <img class="js-lazyLoading imgContents" src="" data-lazy="./images/form16.png" alt="" width="750" height="1576" loading="lazy">
+        <button type="button" class="nextButton js-form16NextButton">解約する</button>
+      </div>
+    </div>
+
+    <div id="form17">
+      <p class="form17_text">
+        ご記入ありがとうございました。<br/>
+        <br/>
+        <span class="form17_subText">内容を確認し、別途担当者より<br/>ご連絡いたします。</span>
+      </p>
+    </div>
+
+    <!-- form -->
+    <form id="formrunForm" class="formrun" action="https://form.run/api/v1/r/m3ateleeoc365fndvdq35h5r" method="post" target="submit">
+      <!-- form1 -->
+      <input type="hidden" id="form1-fullName" name="名前" value="">
+      <input type="hidden" id="form1-mailAddress" name="メールアドレス" value="">
+      <input type="hidden" id="form1-phoneNumber" name="電話番号" value="">
+      <input type="hidden" id="form1-radio" name="定期配送の次回配送分をスキップ・休止・解約のどれをご希望ですか？" value="">
+      <!-- form2 -->
+      <input type="hidden" id="form2-radio" name="②次回配送分のスキップ　　次回配送分のスキップを希望するお薬を選択してください。" value="">
+      <!-- form3 -->
+      <input type="hidden" id="form3-radio" name="③休止・解約をご希望するお薬　　解約・休止をご希望するお薬を選択してください。" value="">
+      <!-- form4 -->
+      <input type="hidden" id="form4-radio" name="④シアリス・バイアグラジェネリック定期配送プランの解約・休止　　解約・休止理由を教えてください。" value="">
+      <!-- form5 -->
+      <input type="hidden" id="form5-radio" name="⑤AGA治療薬　定期配送プランの解約・休止　　解約・休止の理由を教えてください。" value="">
+      <!-- form6 -->
+      <input type="hidden" id="form6-radio" name="⑥ミノキシジル外用薬の解約・休止　　ミノキシジル外用薬だけ解約・休止しますか？" value="">
+      <!-- form7 -->
+      <input type="hidden" id="form7-radio" name="⑦シアリス・バイアグラジェネリック定期配送プランの解約・休止　　定期配送プランを解約・休止しますか? " value="">
+      <!-- form8 -->
+      <input type="hidden" id="form8-radio" name="⑧薬が余ってしまっている方　　解約・休止を進めますか？" value="">
+      <!-- form9 -->
+      <input type="hidden" id="form9-radio" name="⑨AGA治療薬 定期配送プランの解約・休止　　他のクリニックで治療を行う予定はありますか？" value="">
+      <!-- form10 -->
+      <input type="hidden" id="form10-radio" name="⑩間違えて購入してしまった方　　定期配送プランを解約・休止しますか?" value="">
+      <!-- form11 -->
+      <input type="hidden" id="form11-radio" name="⑪薬が余ってしまっている方　　定期配送プランを解約・休止の手続きを進めますか？" value="">
+      <!-- form12 -->
+      <input type="hidden" id="form12-clinicName" name="⑫他のクリニックで治療を行う予定の方　　治療予定のクリニック名を教えてください。" value="">
+      <input type="hidden" id="form12-radio" name="⑫他のクリニックで治療を行う予定の方　　そのクリニックでは海外製の医薬品を処方されている、または処方予定ですか？" value="">
+      <!-- form13 -->
+      <input type="hidden" id="form13-radio" name="⑬AGA治療について　　定期配送プランを解約・休止しますか?" value="">
+      <!-- form15 -->
+      <input type="hidden" id="form15-radio" name="⑮ミノキシジル内服薬について　　解約・休止を進めますか？" value="">
+    </form>
+  </main>
+  <!-- <iframe name="submit" scrolling="no" frameborder="no" style="display: none;"></iframe> -->
+<script src="https://sdk.form.run/js/v2/formrun.js"></script>
+<script src="./script/library/jquery-3.6.0.min.js"></script>
+<script src="./script/lazyload.js"></script>
+<script src="./script/index.js"></script>
+<script src="./script/forms/form1.js"></script>
+<script src="./script/forms/form2.js"></script>
+<script src="./script/forms/form3.js"></script>
+<script src="./script/forms/form4.js"></script>
+<script src="./script/forms/form5.js"></script>
+<script src="./script/forms/form6.js"></script>
+<script src="./script/forms/form7.js"></script>
+<script src="./script/forms/form8.js"></script>
+<script src="./script/forms/form9.js"></script>
+<script src="./script/forms/form10.js"></script>
+<script src="./script/forms/form11.js"></script>
+<script src="./script/forms/form12.js"></script>
+<script src="./script/forms/form13.js"></script>
+<script src="./script/forms/form14.js"></script>
+<script src="./script/forms/form15.js"></script>
+<script src="./script/forms/form16.js"></script>
+</body>
+</html>

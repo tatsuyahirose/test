@@ -1,0 +1,301 @@
+/* 共通 */
+body {
+  background: #e5e5e5;
+}
+
+.header {
+  padding: 14px 0;
+  text-align: center;
+  background: #E8E2D5;
+}
+
+/* #form1, */
+#form2,
+#form3,
+#form4,
+#form5,
+#form6,
+#form7,
+#form8,
+#form9,
+#form10,
+#form11,
+#form12,
+#form13,
+#form14,
+#form15,
+#form16,
+#form17 {
+  display: none;
+}
+
+::placeholder {
+  color: #dddbdb;
+}
+
+.container {
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0 20px;
+}
+
+.imgContents {
+  display: block;
+  margin: 20px auto 0;
+  height: auto;
+}
+
+.formInner {
+  margin: 20px 8px 0;
+  padding: 30px 16px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.formItem {
+  margin: 0 0 16px;
+}
+
+.inputTitle {
+  color: #6d6d6d;
+  font-size: 16px;
+  margin: 0 0 10px;
+  letter-spacing: 0.08em;
+}
+
+.formItem_label {
+  position: relative;
+  display: flex;
+  margin: 0 0 8px;
+  padding: 5px 0 5px 30px;
+  color: #6d6d6d;
+  font-size: 15px;
+  border: 1px solid #dddbdb;
+  border-radius: 4px;
+  min-height: 36px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.formItem_label_text::before {
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  transform: translate(0, -50%);
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #dddbdb;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.formItem_label_input:checked + .formItem_label_text::before {
+  border-color: #00B3CB;
+  border-width: 4px;
+}
+
+.textInput {
+  width: 100%;
+  height: 36px;
+  padding: 5px;
+  border: 1px solid #dddbdb;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* 必須ラベル */
+.isInputRequire {
+  display: inline-block;
+  color: #fff;
+  font-size: 10px;
+  line-height: 15px;
+  margin: 0 0 0 5px;
+  padding: 0 5px;
+  text-align: center;
+  background: #D9534F;
+  border-radius: 3px;
+  vertical-align: text-top;
+}
+
+/* 任意ラベル */
+.isInputAny {
+  display: inline-block;
+  color: #fff;
+  font-size: 10px;
+  line-height: 15px;
+  margin: 0 0 0 5px;
+  padding: 0 5px;
+  text-align: center;
+  background: #a7a7a7;
+  border-radius: 3px;
+  vertical-align: text-top;
+}
+
+/* エラーメッセージ */
+.errorMessage {
+  display: none;
+  color: #D9534F;
+  font-size: 12px;
+}
+
+/* 「次へ」ボタン */
+.nextButton {
+  display: block;
+  margin: 28px auto 0;
+  width: 100%;
+  line-height: 56px;
+  color: #fff;
+  text-align: center;
+  background: #4993BA;
+  border-radius: 4px;
+}
+
+/* 「前に戻る」ボタン */
+.prevButton {
+  display: block;
+  margin: 28px auto 0;
+  color: #6d6d6d;
+  text-decoration: underline;
+  text-align: center;
+}
+
+/* プログレスバー */
+.progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 35px auto 0;
+}
+
+.progress__bar {
+  position: relative;
+  width: 280px;
+  height: 12px;
+  background: #e5e5e5;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress__bar__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 12px;
+  background: #00b3cb;
+  border-radius: 10px;
+}
+
+.progress__bar__num {
+  font-size: 10px;
+  font-weight: bold;
+  color: #6d6d6d;
+}
+
+/* form1用css */
+.form1_title {
+  margin: 0 0 23px;
+  color: #4993BA;
+  font-size: 21px;
+  text-align: center;
+}
+.form1_description {
+  color: #000;
+  font-size: 15px;
+}
+
+.form1_description_note {
+  color: #a7a7a7;
+}
+
+/* form2用css */
+.form2_description {
+  color: #000;
+  font-size: 15px;
+}
+
+/* form3用css */
+.form3_title {
+  margin: 0;
+  color: #000;
+  font-size: 21px;
+  text-align: center;
+}
+
+/* form4用css */
+.form4_title {
+  margin: 0;
+  color: #000;
+  font-size: 21px;
+  text-align: center;
+}
+
+/* form5用css */
+.form5_title {
+  margin: 0;
+  color: #000;
+  font-size: 21px;
+  text-align: center;
+}
+
+/* form6用css */
+.form6_title {
+  margin: 0 0 23px;
+  color: #000;
+  font-size: 21px;
+  text-align: center;
+}
+.form6_description {
+  color: #000;
+  font-size: 15px;
+}
+
+/* form7用css */
+.form7_title {
+  margin: 0;
+  color: #000;
+  font-size: 21px;
+  text-align: center;
+}
+
+/* form8用css */
+.form8_description {
+  color: #000;
+  font-size: 15px;
+}
+
+/* form9用css */
+
+/* form10用css */
+.form10_description {
+  color: #000;
+  font-size: 15px;
+}
+
+/* form11用css */
+.form11_description {
+  color: #000;
+  font-size: 15px;
+}
+
+/* form16用css */
+#form16 {
+  text-align: center;
+}
+
+/* form17用css */
+.form17_text {
+  margin: 20px 8px 0;
+  padding: 30px 16px;
+  background: #fff;
+  box-sizing: border-box;
+  color: #000;
+  font-size: 15px;
+  text-align: center;
+}
+
+.form17_subText {
+  color: #a7a7a7;
+}
