@@ -9,13 +9,12 @@
       switch ($form6RadioVal) {
         case 'ミノキシジル外用薬だけ「解約」する':
         case 'ミノキシジル外用薬だけ「休止」する':
-          w.oopsObj.pageList.push('5');
-          $('#form5').show();
+          w.sendOopsForm();
           break;
         case 'フィナステリド+ミノキシジル外用薬セットの解約に進む':
         case 'デュタステリド+ミノキシジル外用薬セットの解約に進む':
-          w.oopsObj.pageList.push('16');
-          $('#form16').show();
+          w.oopsObj.pageList.push('5');
+          $('#form5').show();
           break;
       }
     });

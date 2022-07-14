@@ -25,8 +25,7 @@
           break;
         case 'ミノキシジル外用薬のみ':
         default:
-          w.oopsObj.pageList.push('16');
-          $('#form16').show();
+          w.sendOopsForm();
           break;
       }
     });

@@ -17,8 +17,8 @@
           $('#form14').show();
           break;
         case 'いいえ、国内正規品です':
-          w.oopsObj.pageList.push('15');
-          $('#form15').show();
+          w.oopsObj.pageList.push('16');
+          $('#form16').show();
           break;
       }
     });

@@ -22,8 +22,7 @@
         case '医師の対応に不満があった':
         case '間違えて定期配送プランを購入した':
         default:
-          w.oopsObj.pageList.push('16');
-          $('#form16').show();
+          w.sendOopsForm();
           break;
       }
     });

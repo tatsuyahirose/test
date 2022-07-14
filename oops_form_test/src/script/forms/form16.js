@@ -1,10 +1,7 @@
 ;(function($, w) {
   $(function(){
     $('.js-form16NextButton').on('click', function() {
-      $('#formrunForm').submit();
-      $('div[id*="form"]').hide();
-      w.oopsObj.pageList.push('17');
-      $('#form17').show();
+      w.sendOopsForm();
     });
 
     $('.js-form16PrevButton').on('click', function() {

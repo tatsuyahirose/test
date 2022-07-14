@@ -4,9 +4,7 @@
       $('#form7-radio').val(
         $('input[name="form7-radio"]:checked').next().text()
       );
-      $('div[id*="form"]').hide();
-      w.oopsObj.pageList.push('16');
-      $('#form16').show();
+      w.sendOopsForm();
     });
 
     $('.js-form7PrevButton').on('click', function() {
